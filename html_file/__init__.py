@@ -17,7 +17,7 @@ class HTMLFile(ExtendedPath):
 
         # I don't know of any reason why you would want to use read_text instead of read_bytes for BeautifulSoup
         # For now this function will always just use read_bytes
-        if not hasattr(self, "cached_parsed_html") or reload:
-            self.cached_parsed_html = ExtendedBeautifulSoup(self.read_bytes_cached(reload), "lxml")
+        if not hasattr(self, "parsed_cached_value") or reload:
+            self.parsed_cached_value = ExtendedBeautifulSoup(self.read_bytes_cached(reload), "lxml")
 
-        return self.cached_parsed_html
+        return self.parsed_cached_value
