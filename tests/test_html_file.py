@@ -1,5 +1,3 @@
-from extended_path import ExtendedPath
-
 from html_file import HTMLFile
 
 
