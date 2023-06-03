@@ -6,7 +6,7 @@ from extended_path import ExtendedPath
 
 class HTMLFile(ExtendedPath):
     def parsed(self) -> ExtendedBeautifulSoup:
-        """Read and parse an html file with caching"""
+        """Read and parse an html file"""
         return ExtendedBeautifulSoup(self.read_bytes(), "lxml")
 
     def parsed_cached(self, reload: bool = False) -> ExtendedBeautifulSoup:
