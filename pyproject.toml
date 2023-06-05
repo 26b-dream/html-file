@@ -6,18 +6,19 @@ profile = "black"
 line_length = 120
 
 [tool.pylint]
-disable = "C0301"
-# C0301 - Line too long: Black makes this redundant
+disable = "C0301" # Line too long: Black makes this redundant
 
 [tool.poetry]
 name = "html_file"
 version = "0.0.1"
 description = "Class for html files"
 authors = ["26b_dream <1@1.1>"]
+readme = "README.md"
+license = "AGPL-3.0-only"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-lxml = "4.9.2 "
+lxml = "^4.0.0 "
 extended_path = { git = "https://github.com/26b-dream/extended-path.git" }
 extended_bs4 = { git = "https://github.com/26b-dream/extended-bs4.git" }
 
