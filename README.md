@@ -1,2 +1,2 @@
 # html-file
- Class for html files
+ Class for HTML files
