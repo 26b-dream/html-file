@@ -1,4 +1,4 @@
-"""Class for html files"""
+"""Class for HTML files"""
 from __future__ import annotations
 
 from typing import TYPE_CHECKING
@@ -13,7 +13,7 @@ if TYPE_CHECKING:
 
 
 class HTMLFile(ExtendedPath):
-    """Class for html files"""
+    """Class for HTML files"""
 
     def __init__(
         self,
@@ -23,10 +23,10 @@ class HTMLFile(ExtendedPath):
         super().__init__()
 
     def parsed(self) -> ExtendedBeautifulSoup:
-        """Read and parse an html file
+        """Read and parse an HTML file
 
         Returns:
-            ExtendedBeautifulSoup: Parsed html file"""
+            ExtendedBeautifulSoup: Parsed HTML file"""
 
         # I don't know of any reason why you would want to use read_text instead of read_bytes for BeautifulSoup. Unless
         # a specific need arises this function will always just use read_bytes
@@ -39,7 +39,7 @@ class HTMLFile(ExtendedPath):
             reload (bool, optional): If True, reload the file into the cache. Defaults to False.
 
         Returns:
-            ExtendedBeautifulSoup: Parsed html file"""
+            ExtendedBeautifulSoup: Parsed HTML file"""
 
         # I don't know of any reason why you would want to use read_text instead of read_bytes for BeautifulSoup. Unless
         # a specific need arises this function will always just use read_bytes
